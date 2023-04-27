@@ -2,11 +2,19 @@
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ?
   'warm' : ''">
     <main>
+      <div class="logo-box">
+        <img alt="logo" src="https://em-content.zobj.net/thumbs/240/apple/354/sun-behind-small-cloud_1f324-fe0f.png"/>
+        <h1 class='logo-text'>Vue Weather App</h1>
+        <div class="slogan"><p>Created by Waleed H.</p></div>
+        </div>
+      
+       
+      
       <div class="search-box">
         <input 
         type="text" 
         class="search-bar" 
-        placeholder="Search..." 
+        placeholder='Enter your location...' 
         v-model='query'
         @keypress="fetchWeather"
         />
@@ -36,6 +44,7 @@ export default {
   name: 'App',
   data (){
     return {
+      // Change API key below
       api_key:'c4c414299c57a00e8599362a05913df4',
       url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
@@ -111,6 +120,49 @@ padding: 25px;
 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
 }
 
+
+
+.logo-box {
+  width: 50%;
+  margin: auto;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  color: white;
+  block-size: auto;
+  
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+}
+  
+.logo-box img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.logo-box h1 {
+  font-size: 48px;
+  font-weight: 900;
+  text-shadow: 2px 4px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slogan {
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  margin-top: 5 px;
+}
+
 .search-box {
   width: 100%;
   margin-bottom: 30px;
@@ -118,8 +170,9 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 
 
 .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 15px;
+  margin: 0 auto;
 
   color: #313131;
   font-size: 12px;
@@ -128,6 +181,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 
   border: none;
   outline: none;
   background: none;
+
 
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.5);
@@ -169,7 +223,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 
   display: inline-block;
   padding: 10px 25px;
   color: white;
-  font-size: 102px;
+  font-size: 80px;
   font-weight: 900;
 
   text-shadow: 2px 4px rgba(255, 255, 255, 0.25);
