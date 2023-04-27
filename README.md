@@ -1,4 +1,4 @@
-# weather-app
+# Vue Weather App :partly_sunny:
 
 >Welcome to my weather app that I created using Vue.js and OpenWeather API!
 
