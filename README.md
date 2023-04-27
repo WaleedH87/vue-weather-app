@@ -1,4 +1,4 @@
-# Vue Weather App :partly_sunny:
+# Vue Weather App  :partly_sunny:
 
 >Welcome to my weather app that I created using Vue.js and OpenWeather API!
 
@@ -37,7 +37,7 @@ To get started with the Vue Weather App, follow these steps:
 
 
 
-## Contributing :open_hands:
+## Contributing  :open_hands:
 
 Any and all contributions are welcome. Here are some ways you can get started:
 
@@ -66,7 +66,7 @@ If you see the need for additional documentation or have any suggestions for imp
 >Thank you for your interest in contributing to the Vue Weather App! :pray:
 
 
-## Licensing :scroll:
+## Licensing  :scroll:
 
 The Vue Weather App is licensed under the [MIT License](https://opensource.org/license/mit/), which is a permissive open-source license. This means that you can use, modify, and distribute the app for both personal and commercial purposes as long as you include the original copyright and license notice.
 
