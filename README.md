@@ -2,36 +2,40 @@
 
 >Welcome to my weather app that I created using Vue.js and OpenWeather API!
 
+
 ## Key Features
 
-:green_circle: Allows users to check the weather (accompanied by some cool graphics) in any given locality. 
+:green_circle:  Allows users to check the weather (accompanied by some cool graphics) in any given locality. 
 
-:green_circle: App is responsive 
+:green_circle:  App is responsive 
 
-:green_circle: Can be utilised by those that want a require visually descriptive way of checking the weather.
+:green_circle:  Can be utilised by those that want a require visually descriptive way of checking the weather.
+
 
 ## Getting Started
 
 ### Prerequistes
 
-:white_check_mark: Must have [Vue installed](https://vuejs.org/guide/quick-start.html)
+:white_check_mark:  Must have [Node 16.0 or later](https://nodejs.org/en) installed
 
-:white_check_mark: Must be subscribed to [OpenWeather API](https://openweathermap.org/api)
+:white_check_mark:  Must be subscribed to [OpenWeather API](https://openweathermap.org/api)
+
 
 ### Steps
+
 To get started with the Vue Weather App, follow these steps:
 
-:one: Clone the repository to your local machine using `git clone https://github.com/your-username/vue-weather-app.git`
+:one:  Clone the repository to your local machine using `git clone https://github.com/your-username/vue-weather-app.git`
 
-:two: Install the necessary dependencies by running `npm install` in the root directory of the project.
+:two:  Install Vue CLI by running `npm install -g @vue/cli` in the root directory of the project.
 
-:three: Log in to your OpenWeather account navigate to ['My API Keys'](https://home.openweathermap.org/api_keys) section on your profile to get an API key.
+:three:  Log in to your OpenWeather account navigate to ['My API Keys'](https://home.openweathermap.org/api_keys) section on your profile to get an API key.
 
-:four: In the `src/App.vue` file, replace the value of `api_key` with the API key you obtained in :three:
+:four:  In the `src/App.vue` file, replace the value of `api_key` with the API key you obtained in **step** :three:
 
-:five: Run the development server by running `npm run serve` in the root directory of the project.
+:five:  Run the development server by running `npm run serve` in the root directory of the project - `cd PATHNAME` .
 
-:six: Open your web browser and go to `http://localhost:8080` to view the Vue Weather App.
+:six:  Open your web browser and go to `http://localhost:8080` to view the Vue Weather App.
 
 >That's it! You should now be able to view the weather app and explore its features. If you encounter any issues or have any questions, please refer to the project's documentation or open an issue on GitHub. :thumbsup:
 
